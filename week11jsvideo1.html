@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Video3</title>
+</head>
+<body>
+
+    <h1>События "jnkeyup,button</h1>
+
+    <input type="text" id="test"
+    onkeyup="document.getElementById('result')
+    .innerText = document.getElementById('test')
+    .value"
+    onmouseover="colorGreen()"
+    onmouseout="colorWhite()">
+    <button onclick="check();">Нажми меня</button> 
+    <div id="result"></div>
+
+    <h2>События "Выпадающие списки"</h2>
+
+    <select name="City" id="City" onchange="show()">
+        <option disabled selected="selected">
+            Выберете город
+        </option>
+        <option value="Istanbul">Стамбул</option>
+        <option value="Bagan">Баган</option>
+        <option value="AngKor">Анкорват</option>
+        <option value="Paris">Париж</option>
+        <option value="Tagil">Тагил</option>
+    </select>
+    <div id="result2">
+        <h3>вы выбрали</h3>
+        <img src="#" id="foto" width="300">
+    </div>
+
+    <script src="script/week11jsvideo1.js"></script>   
+</body>
+</html>
